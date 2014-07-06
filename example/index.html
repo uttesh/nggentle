@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="nggentle">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>AngularJS nggentle</title>
+        <script>document.write('<base href="' + document.location + '" />');</script>
+<!--        <link rel="stylesheet" href="style.css" />-->
+        <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js" data-semver="1.0.8"></script>
+        <script src="http://code.angularjs.org/1.0.3/angular-sanitize.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-controller="filterCtrl">
+        <textarea ng-model="txt" style=" width:400px;height:200px;"></textarea>
+    <gentle ng-model="txt"></gentle>
+
+</body>
+
+</html>
