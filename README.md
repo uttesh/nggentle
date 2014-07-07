@@ -9,6 +9,12 @@ Mostly based on various snippets which I found on JSFiddle, with some changes by
 ```
 bower install ngGentle
 ```
+new version
+
+```
+bower install ngGentle0.0.1
+```
+
 or alternatively download and include `ngGentle.js` after `angular.min.js`.
 
 Add the `ngGentle` module as a dependency when creating your app, e.g.
