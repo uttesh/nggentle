@@ -4,6 +4,7 @@ Is an AngularJS module for simple gentle plugin which will allow only good words
 
 Mostly based on various snippets which I found on JSFiddle, with some changes by me.
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/uttesh/nggentle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ## Quick start
 
 ```
