@@ -1,4 +1,4 @@
-# nggentle
+# nggentle <a href="http://uttesh.github.io/nggentle/">demo</a>
 
 Is an AngularJS module for simple gentle plugin which will allow only good words and filter out bad/swear world from input static data. simple directives here will show the bad word on type and service 'paragraph' with 'isGentle' method, method will take input string and find or the bad/swear worlds if found return the list of bad words in input text, it checks around thousand bad/swear words and can be filtered.
 
