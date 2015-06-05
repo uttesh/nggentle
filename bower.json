@@ -1,0 +1,15 @@
+{
+    "name": "ngGentle",
+ 	"main": "./ngGentle.js",
+	"version": "0.0.1",
+	"keywords": [
+		"angular",
+		"gentle",
+		"filter bad words",
+		"filter swear words",
+		"bad words"
+	],
+	  "dependencies": {
+		"angular": "*"
+	  }
+}

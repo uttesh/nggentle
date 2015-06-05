@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="ngGentleApp">
+   <head>
+      <meta charset="utf-8" />
+      <title>nggentle</title>
+      <link rel="icon" href="static/images/logo.png" type="image/png">
+      <script src="static/lib/jquery.js"></script>
+      <script src="static/lib/angular.js"></script>
+      <script src="static/js/ngGentle.js"></script>
+      <script src="static/js/app.js"></script>
+      <link rel="stylesheet" href="static/css/bootstrap/css/bootstrap-lumen.css" />
+      <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
+   </head>
+   <body ng-controller="filterCtrl" style="margin: 0 25px 0; padding: 0 15px 0;">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+         <div class="container" >
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" style="height: inherit;" href="#"><i class="fa fa-check-circle-o" style="color:green"></i> Ng Gentle</a>
+            </div>
+         </div>
+         <a href="https://github.com/uttesh/nggentle">
+         <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+      </div>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+         <div class="container">
+            <h1> <i class="fa fa-check-circle-o" style="color:green"></i>  ng-gentle</h1>
+            <p>Simple angularJS module plugin which will filter out bad/swear word from input static data. simple directives here will show the bad word on type and service 'paragraph' with 'isGentle' method, method will take input string and find the bad/swear worlds if found return the list of bad words in input text, it checks around thousand bad/swear words and can be filtered.</p>
+            <p><a class="btn btn-primary btn-lg" role="button" href="https://codeload.github.com/uttesh/nggentle/zip/master"><i class="fa fa-download"></i> Download</a></p>
+         </div>
+      </div>
+      <div class="jumbotron">
+         <div class="container">
+            <div class="panel panel-primary">
+               <div class="panel-heading">
+                  <h3 class="panel-title">Sample</h3>
+               </div>
+               <div class="panel-body">
+                  <textarea class="form-control" rows="3" id="textArea" ng-model="txt" placeholder="type here swear/bad words to test the gentle directive"></textarea>
+                  <span class="help-block">
+                     <Gentle ng-model="txt"></Gentle>
+                  </span>
+                  <button type="submit" class="btn btn-primary" ng-disabled="isNotgentle">Submit</button> this submit button will be disabled on bad word entry
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="jumbotron">
+         <div class="container">
+            <h1>Quick start</h1>
+            <p>
+            <pre>
+bower install ngGentle
+</pre>
+            <br>
+            or alternatively download and include `ngGentle.js` after `angular.min.js`. <br>
+            Add the `ngGentle` module as a dependency when creating your app, e.g. <br>
+            <pre>
+var app = angular.module('myApp', ['ngGentle']);`
+</pre>
+ </br>
+            <pre>
+<span> just add this any where to show the entered bad word <img src="static/images/sample1.png"/></span> 
+<span> use this scope to disable the button <img src="static/images/sample2.png"/></span>
+<span><b>NOTE : scope variable should be "txt".</b></span>
+</pre>
+sample code :
+<pre>
+&lt;div&gt; 
+&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot; id=&quot;textArea&quot; ng-model=&quot;txt&quot; placeholder=&quot;type here swear/bad words to test the gentle directive&quot;&gt;&lt;/textarea&gt; 
+&lt;span class=&quot;help-block&quot;&gt; &lt;Gentle ng-model=&quot;txt&quot;&gt;&lt;/Gentle&gt;&lt;/span&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; ng-disabled=&quot;isNotgentle&quot;&gt;Submit&lt;/button&gt; 
+this submit button will be disabled on bad word entry 
+&lt;/div&gt;
+</pre>
+            </p>
+         </div>
+      </div>
+   </body>
+</html>
